@@ -8,6 +8,17 @@ An app to allow users to request in-home COVID-19 testing and medical profession
 
 Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS and android. It uses Google Firebase (firebase.google.com) for authentication and the Firestore db(NoSql), so it is client-only app (no backend).
 
+## Using the Demo App:
+- Visit the Demo App link above (works best on your mobile device) and login with your phone number or email address.
+- Create a few cases with addresses in the zip code that you live
+- Fill in your Profile page and select the 'Request Medical' checkbox
+- I will review Medical Requests periodically and will let you know when you have been approved
+- You can then login again but will be redirected to the Medical Dashboard
+- Set your 'Base Zip' in your profile to your local zip code
+- Any cases (including the cases you created at that zip code previously) will be visible in the 'Open Cases' tab
+- You can then view case details, view them on a map and add them to your caseload
+- You can then interact with cases in your caseload, such as navigating, completing or commenting on cases.
+
 ## Major Functionality:
 
 ### Users:
