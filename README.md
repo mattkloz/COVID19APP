@@ -2,6 +2,8 @@
 
 [DEMO APP](https://ricovid19.firebaseapp.com/)
 
+[VIEW THE REPO](https://github.com/mattkloz/COVID19APP)
+
 An app to allow users to request in-home COVID-19 testing and medical professionals to respond to those requests.
 
 Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS and android. It uses Google Firebase (firebase.google.com) for authentication and the Firestore db(NoSql), so it is client-only app (no backend).
