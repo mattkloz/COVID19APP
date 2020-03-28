@@ -1,0 +1,44 @@
+{
+  "name": "covid19",
+  "version": "0.0.1",
+  "description": "An app for managing COVID-19 in Rhode Island",
+  "productName": "RICovid19",
+  "cordovaId": "org.ri_covid_19.app",
+  "capacitorId": "",
+  "author": "Mattkloz <mtthwklose@gmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@google/markerclusterer": "^2.0.8",
+    "@quasar/extras": "^1.0.0",
+    "crypto-js": "^4.0.0",
+    "firebase": "^7.11.0",
+    "google-maps": "^4.2.3",
+    "google-maps-api-loader": "^1.1.1",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "quasar": "^1.0.0",
+    "secure-ls": "^1.2.6",
+    "vue-cryptojs": "^2.1.3",
+    "vue2-google-maps": "^0.10.7",
+    "vuelidate": "^0.7.5",
+    "vuex": "^3.1.3",
+    "vuex-persist": "^2.2.0",
+    "vuex-persistedstate": "^3.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0",
+    "@quasar/quasar-app-extension-dotenv": "^1.0.0"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}
