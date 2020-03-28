@@ -1,4 +1,4 @@
-# COVID-19 TESTING REQUESTS
+# COVID-19 TESTING REQUESTS APP
 
 [DEMO APP](https://ricovid19.firebaseapp.com/)
 
