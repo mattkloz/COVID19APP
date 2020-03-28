@@ -1,6 +1,6 @@
 # COVID-19 TESTING REQUESTS
 
-[DEMO](https://ricovid19.firebaseapp.com/).
+[DEMO APP](https://ricovid19.firebaseapp.com/)
 
 An app to allow users to request in-home COVID-19 testing and medical professionals to respond to those requests.
 
