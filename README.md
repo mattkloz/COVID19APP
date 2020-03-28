@@ -1,4 +1,4 @@
-# COVID-19 IN-HOME TESTING REQUESTS
+# COVID-19 TESTING REQUESTS
 
 An app to allow users to request in-home COVID-19 testing and medical professionals to respond to those requests.
 
