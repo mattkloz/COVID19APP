@@ -4,7 +4,7 @@
 
 [VIEW THE REPO](https://github.com/mattkloz/COVID19APP)
 
-An app to allow users to request in-home COVID-19 testing and medical professionals to respond to those requests.
+This is an app to allow users to request in-home COVID-19 testing and medical professionals to respond to those requests. This was developed for use in Rhode Island (my home state) but is likely applicable anywhere in the US (or world if you update the Zip Code tracking to some local format, or stricly on coordinates).
 
 Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS and android. It uses Google Firebase (firebase.google.com) for authentication and the Firestore db(NoSql), so it is client-only app (no backend).
 
