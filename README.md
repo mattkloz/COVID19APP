@@ -27,6 +27,8 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 - Cases reside under addresses which reside under zip codes (Zipcode->Street Address->Case)
 - Cases collect myriad information on the person requesting a test, such as their age, symptoms they are experiencing, preexisting conditions, etc. which creates a "priority" based on these conditions
 
+![Users Demo](https://demo-mjk.s3.amazonaws.com/user1.gif)
+
 ### Medical Professionals:
 - Medical Professionals (MPs) are users with a designated "medical" flag, they use the same login as regular users but are redirected to a separate dashboard.
 - MPs set a base zipcode that allows them to see open cases in that area, and they also must allow the app to get their current location.
