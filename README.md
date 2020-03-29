@@ -45,6 +45,7 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 - Service Workers for offline functionality
 - Identifying hotspots based on testing requests and priority
 - Streamline the SessionStorage / encrypt it
+- If a medical user changes their base zip while they have active cases in their caseload, those cases are removed from their caseload. Should prevent a change of basezip with incomplete cases in a caseload.
     
 
 ## Install the dependencies
