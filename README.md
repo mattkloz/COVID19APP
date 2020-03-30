@@ -50,11 +50,11 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
   - General cleansing of the UI
   - Code cleanup
   - More sophisticated "prioritization"
-  - ~~Admin dashboard to streamline approval of MPs
+  - ~~Admin dashboard to streamline approval of MPs~~
   - Service Workers for offline functionality
   - Identifying hotspots based on testing requests and priority
   - Streamline the SessionStorage / encrypt it
-  - ~~If a medical user changes their base zip while they have active cases in their caseload, those cases are removed from their caseload. Should prevent a change of basezip with incomplete cases in a caseload.
+  - ~~If a medical user changes their base zip while they have active cases in their caseload, those cases are removed from their caseload. Should prevent a change of basezip with incomplete cases in a caseload.~~
 
 ## Firebase API & GoogleMaps API
 
