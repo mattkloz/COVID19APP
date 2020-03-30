@@ -36,6 +36,7 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 - MP's "accept" cases, which assign the case to them in the db, and moves the case to their "caseload", making the cases unavailable to other MPs in the same area.
 - MPs can then interact with the cases in their caseload (e.g. add comments, view contact info, navigate to the case location (which opens the case location in the user's mobile device with directions), complete the case or remove the case from their caseload.)
 
+#### Adding Symptoms to a case
 ![Medical Demo](https://demo-mjk.s3.amazonaws.com/medical3.gif)
 
 ### Todos:
