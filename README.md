@@ -41,18 +41,20 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 ![Medical Demo](https://demo-mjk.s3.amazonaws.com/acceptcases.gif)
 
 ### Todos:
-- Send email or text message to users when their case has been scheduled
-- Add ability for hospitals to see case activity in their area
-- Add ability for MPs to refer cases to Hospitals
-- General cleansing of the UI
-- Code cleanup
-- More sophisticated "prioritization"
-- Admin dashboard to streamline approval of MPs
-- Service Workers for offline functionality
-- Identifying hotspots based on testing requests and priority
-- Streamline the SessionStorage / encrypt it
-- If a medical user changes their base zip while they have active cases in their caseload, those cases are removed from their caseload. Should prevent a change of basezip with incomplete cases in a caseload.
-    
+  - Send email or text message to users when their case has been scheduled
+  - Add ability for hospitals to see case activity in their area
+  - Add ability for MPs to refer cases to Hospitals
+  - General cleansing of the UI
+  - Code cleanup
+  - More sophisticated "prioritization"
+  - Admin dashboard to streamline approval of MPs
+  - Service Workers for offline functionality
+  - Identifying hotspots based on testing requests and priority
+  - Streamline the SessionStorage / encrypt it
+  - If a medical user changes their base zip while they have active cases in their caseload, those cases are removed from their caseload. Should prevent a change of basezip with incomplete cases in a caseload.
+
+## Firebase API & GoogleMaps API
+
 
 ## Install the dependencies
 ```bash
