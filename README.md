@@ -55,6 +55,11 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 
 ## Firebase API & GoogleMaps API
 
+### Create a Firebase Account
+[Firebase](https://firebase.google.com)
+
+### Get a GoogleMaps API Key
+[Google Maps API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
 ## Install the dependencies
 ```bash
