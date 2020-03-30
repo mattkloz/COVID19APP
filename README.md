@@ -27,6 +27,7 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 - Cases reside under addresses which reside under zip codes (Zipcode->Street Address->Case)
 - Cases collect myriad information on the person requesting a test, such as their age, symptoms they are experiencing, preexisting conditions, etc. which creates a "priority" based on these conditions
 
+#### Adding Symptoms to a case
 ![Users Demo](https://demo-mjk.s3.amazonaws.com/symptoms3.gif)
 
 ### Medical Professionals:
@@ -36,7 +37,7 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 - MP's "accept" cases, which assign the case to them in the db, and moves the case to their "caseload", making the cases unavailable to other MPs in the same area.
 - MPs can then interact with the cases in their caseload (e.g. add comments, view contact info, navigate to the case location (which opens the case location in the user's mobile device with directions), complete the case or remove the case from their caseload.)
 
-#### Adding Symptoms to a case
+#### Case Management
 ![Medical Demo](https://demo-mjk.s3.amazonaws.com/medical3.gif)
 
 ### Todos:
