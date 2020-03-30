@@ -182,6 +182,7 @@
       icon="eva-pin-outline"
       label="Start Navigating"
       @click="beginNav"
+      v-if="caseLoad != ''"
     >
       <q-list>
         </q-item>
@@ -496,6 +497,7 @@ export default {
       }
       this.removewindow = false;
       this.$q.notify({
+        timeout: 800,
         message: 'This case has been removed from your caseload.' ,
         color: 'green',
         icon: 'eva-checkmark-circle-2-outline'
