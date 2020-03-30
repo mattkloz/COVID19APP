@@ -200,9 +200,7 @@ export default {
           } else if (res.data().role == "medical") {
             commit('SET_MEDICAL', true)
             commit('SET_BASE_ZIP', res.data().baseZip)
-            // router.replace({ name: 'medicaldashboard' }).catch(() => {})
           } else {
-            // router.replace({ name: 'userdashboard' }).catch(() => {})
           }
       }).catch(err => {
           console.log(err)
@@ -212,12 +210,26 @@ export default {
     async updateUserProfile ({ commit, state, dispatch }, payload) {
       var toUpdate = state.user.id
       await Firebase.firestore().collection('users').doc(toUpdate).update({
-        baseZip: payload.baseZip,
         email: payload.email,
         phone: payload.phone,
         name: payload.name,
         requestedMed: payload.requestedMed,
         requestedMedOn: Firebase.firestore.FieldValue.serverTimestamp(),
+        updated: Firebase.firestore.FieldValue.serverTimestamp()
+      }).then(res => {
+        dispatch('fetchUserProfile')
+      }).catch(err => {
+          console.log(err)
+      })
+    },
+
+    async updateMedicalProfile ({ commit, state, dispatch }, payload) {
+      var toUpdate = state.user.id
+      await Firebase.firestore().collection('users').doc(toUpdate).update({
+        baseZip: payload.baseZip,
+        email: payload.email,
+        phone: payload.phone,
+        name: payload.name,
         updated: Firebase.firestore.FieldValue.serverTimestamp()
       }).then(res => {
         dispatch('fetchUserProfile')

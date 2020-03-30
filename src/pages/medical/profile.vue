@@ -50,17 +50,33 @@
                 bottom-slots 
                 :error="$v.yourbasezip.$error"
                 maxlength="5"
+                :disabled="!mybasezip"
             >
               <template v-slot:append>
                 <q-icon name="close" @click="yourbasezip = ''" class="cursor-pointer" />
               </template>
 
-              <template v-slot:hint>
-                Used to determine the area to assign you cases.
+              <template 
+              v-slot:hint 
+              v-if="!mybasezip"
+              >
+                You cannot change your basezip if you have incomplete cases in your caseload. Please remove them or complete them to change your basecode.
               </template>
             </q-input>
-      <q-btn outline color="primary" class="action-btn" label="Save" @click="submit" />
-      <q-btn outline color="grey" class="action-btn" label="Cancel" @click="$router.go(-1)" />
+      <q-btn 
+      outline 
+      color="primary" 
+      class="action-btn" 
+      label="Save" 
+      @click="submit" 
+      v-bind:class="{ addMargin: !mybasezip }" 
+      />
+      <q-btn 
+      outline color="grey" 
+      class="action-btn" 
+      label="Cancel" 
+      @click="$router.go(-1)" 
+      />
       </form>
     </div>
     </div>
@@ -83,18 +99,30 @@ export default {
       youremail: '',
       yourphone: '',
       yourbasezip: '',
+      mybasezip: true,
     };
   },
   computed: {
     userProfile () {
       return this.$store.getters['auth/getUserProfile']
     },
+    ...mapState('medical', ['caseLoad']),
   },
   created () {
-    this.yourname = this.userProfile.name
-    this.youremail = this.userProfile.email
-    this.yourphone = this.userProfile.phone
-    this.yourbasezip = this.userProfile.baseZip
+    this.yourname = this.userProfile.name;
+    this.youremail = this.userProfile.email;
+    this.yourphone = this.userProfile.phone;
+    this.yourbasezip = this.userProfile.baseZip;
+    var checkComp = []
+    this.$_.forEach(this.caseLoad, function(key, value) {
+      if (key.status != "completed") {
+        checkComp.push(key)
+      }
+    })
+    if (checkComp.length) {
+      this.mybasezip = false;
+    }
+    console.log(this.mybasezip)
   },
   validations: {
     yourbasezip: { required, minLength: minLength(5) },
@@ -115,7 +143,7 @@ export default {
         phone: this.yourphone,
         name: this.yourname,
       }
-      await this.$store.dispatch('auth/updateUserProfile', payload);
+      await this.$store.dispatch('auth/updateMedicalProfile', payload);
       
       this.$q.notify({
       timeout: 1000,
@@ -136,5 +164,8 @@ export default {
 .action-btn {
   width: 70%;
   margin-top: 20px;
+}
+.addMargin {
+  margin-top: 50px;
 }
 </style>
