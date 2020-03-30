@@ -38,7 +38,7 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 - MPs can then interact with the cases in their caseload (e.g. add comments, view contact info, navigate to the case location (which opens the case location in the user's mobile device with directions), complete the case or remove the case from their caseload.)
 
 #### Accepting Cases
-![Medical Demo](https://demo-mjk.s3.amazonaws.com/acceptcases.gif)
+![Medical Demo](https://demo-mjk.s3.amazonaws.com/acceptcases2.gif)
 
 ### Todos:
 - Send email or text message to users when their case has been scheduled
