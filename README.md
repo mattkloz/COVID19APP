@@ -40,6 +40,9 @@ Build on the Quasar Framework (quasar.dev), this app can can build for web, iOS 
 #### Accepting Cases
 ![Medical Demo](https://demo-mjk.s3.amazonaws.com/acceptcases.gif)
 
+#### Starting Navigation
+![Navigation Demo](https://demo-mjk.s3.amazonaws.com/nav1.gif)
+
 ### Todos:
   - Send email or text message to users when their case has been scheduled
   - Add ability for hospitals to see case activity in their area
