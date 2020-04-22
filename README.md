@@ -1,7 +1,5 @@
 # COVID-19 TESTING REQUESTS & PRIORITIZATION APPLICATION
 
-[DEMO APP](https://ricovid19.firebaseapp.com/)
-
 [VIEW THE REPO](https://github.com/mattkloz/COVID19APP)
 
 This is an app for people to request in-home COVID-19 testing, which prioritizes those requests and allows medical professionals to act on those requests. This was developed for use in Rhode Island (my home state) but is likely applicable anywhere in the US (or world if you update the Zip Code tracking to some local format, or stricly on coordinates).
